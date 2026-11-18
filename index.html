@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Akhila Sri Talpareddy | Creative Developer Portfolio</title>
+<meta name="description" content="Explore the creative digital portfolio of Akhila Sri Talpareddy, a Computer Science and Engineering student passionate about programming, artificial intelligence, web development, innovation, and creative problem-solving.">
+<meta property="og:title" content="Akhila Sri Talpareddy | Creative Developer Portfolio">
+<meta property="og:description" content="Curious Mind. Creative Vision. Endless Possibilities. Explore my projects and learning journey at Aditya University.">
+<meta property="og:type" content="website"><meta name="twitter:card" content="summary">
+<style>
+:root{color-scheme:dark;--bg:#100c19;--surface:#1c142d;--text:#faf5ff;--muted:#c7b9d9;--accent:#c29aff;--blue:#82bbff;--line:#75609080;--speed:.65s;scroll-behavior:smooth}
+[data-theme=light]{color-scheme:light;--bg:#fbf7ff;--surface:#f0e5fe;--text:#25143f;--muted:#513f68;--accent:#6334aa;--blue:#145496;--line:#7a589357}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:1rem/1.65 system-ui,sans-serif}
+h1,h2,h3,p{margin:0 0 .75rem}
+h1,h2,h3{line-height:1.08}
+h1{font-size:clamp(3.4rem,8vw,7.5rem);letter-spacing:-.085em}
+h2{font-size:clamp(2.2rem,5.5vw,4.6rem);letter-spacing:-.065em}
+h3{font-size:1.35rem}
+em{font-style:normal;color:var(--accent)}
+p{color:var(--muted)}
+a{color:inherit;text-decoration:none}
+button,summary{cursor:pointer}
+button,input,textarea{font:inherit}
+button{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+[hidden]{display:none!important}
+.skip{position:fixed;z-index:20;top:1rem;left:1rem;background:var(--surface);padding:1rem;transform:translateY(-200%)}
+.skip:focus{transform:none}
+.shell,.nav-shell{width:min(1160px,calc(100% - 2.5rem));margin:auto}
+.header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-shell,.brand,.controls,nav,.actions{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.nav-shell{min-height:68px;justify-content:space-between;position:relative}
+.brand{font-weight:750;gap:.55rem}
+.mark{font-size:1.5rem;color:var(--accent)}
+nav a:hover,.text-link:hover{color:var(--blue)}
+.icon,.quiet,.text-link{background:transparent;border:0}
+.icon{min-width:42px;min-height:42px;border:1px solid var(--line);border-radius:50%}
+#menu{display:none}
+.progress{position:absolute;bottom:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--accent),var(--blue));transform:scaleX(var(--progress,0));transform-origin:left}
+.hero{min-height:min(710px,88vh);display:grid;grid-template-columns:1.15fr .85fr;align-items:center;padding:4.5rem 0;gap:1rem}
+.eyebrow{color:var(--accent);font:700 .75rem/1.5 ui-monospace,monospace;letter-spacing:.15em;margin-bottom:1rem}
+.identity{color:var(--text);font-weight:650}
+.identity span{color:var(--accent)}
+.intro{max-width:38ch}
+.actions{margin-top:1.5rem}
+.primary,.secondary{display:inline-flex;align-items:center;gap:.5rem;border-radius:8px;padding:.65rem 1rem;font-weight:700;border:1px solid var(--line);background:var(--surface)}
+.primary{background:#c29aff;color:#211133}
+.primary:hover,.secondary:hover{filter:brightness(1.13)}
+.hero-art{position:relative;display:grid;place-items:center;min-height:350px;overflow:hidden;background:radial-gradient(ellipse,#8549d43b,transparent 69%);perspective:700px}
+.orbit-stage{position:relative;width:min(76%,340px);aspect-ratio:1;display:grid;place-items:center;transform-style:preserve-3d;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .22s}
+.orbit-stage::before,.orbit-stage::after{content:"";position:absolute;inset:8%;border:1px solid var(--accent);border-radius:50%;transform:rotateX(57deg) rotateZ(35deg);box-shadow:0 0 24px #a078ff55;animation:orbit 13s linear infinite}
+.orbit-stage::after{inset:0;border-color:var(--blue);animation-direction:reverse;animation-duration:18s}
+.orbit-stage> *{position:absolute}
+.core,.orbit-core{width:47%;aspect-ratio:1;border-radius:32%;background:linear-gradient(145deg,#e6bcff,#823cde 48%,#3559ba);box-shadow:0 0 65px #a365ff85,inset 0 0 1.5rem #dbb6ff99;transform:rotate(35deg);animation:float 5s ease-in-out infinite;display:grid;place-items:center;color:white;font-size:2rem}
+@keyframes orbit{to{transform:rotateX(57deg) rotateZ(395deg)}}
+@keyframes float{50%{transform:translateY(-14px) rotate(45deg)}}
+.statement{margin:0;border-left:2px solid var(--accent);padding:1rem 1.4rem;background:var(--surface)}
+blockquote{margin:0;color:var(--muted)}
+.section{padding:clamp(3rem,8vw,7rem) 0;border-bottom:1px solid var(--line)}
+section,main{scroll-margin-top:85px}
+.section-head{max-width:48rem;margin-bottom:1.75rem}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.copy{font-size:1.15rem}
+.gallery,.roadmap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.project,.panel,.skill-groups,.roadmap li,.timeline details{border:1px solid var(--line);background:var(--surface);border-radius:16px}
+.project{overflow:hidden;transform:perspective(850px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .2s,border-color .2s}
+.project:hover,.project:focus-within{border-color:var(--accent)}
+.featured{grid-column:1/-1;display:grid;grid-template-columns:1.15fr 1fr;align-items:center}
+.project-copy,.panel,.skill-groups,.roadmap li,.timeline details{padding:1.25rem}
+.project-art{min-height:180px;display:grid;place-items:center;overflow:hidden;background:#211436;color:#e0baff}
+.featured .project-art{min-height:290px;background:radial-gradient(ellipse at 35% 30%,#6640a2,#1d1735 70%)}
+.job-window,.terminal{width:85%;max-width:330px;background:#100d1e;color:#f2e7ff;border:1px solid #9676bc;border-radius:10px;overflow:hidden}
+.window-bar{padding:.4rem .75rem;border-bottom:1px solid #54446b;display:flex;gap:6px}
+.window-bar i{width:7px;height:7px;background:#bb91ff;border-radius:50%}
+.job-ui{padding:1rem}
+.job-ui strong{display:block;font-size:1.5rem;line-height:1.1;margin:.7rem 0}
+.skill-pills{display:flex;flex-wrap:wrap;gap:.3rem}
+.skill-pills span{padding:.12rem .4rem;border:1px solid #8e76b5;border-radius:20px;font-size:.67rem}
+.job-line{height:5px;width:80%;margin:.7rem 0;background:#9471cf;border-radius:6px}
+.job-line.short{width:52%}
+.terminal{padding:.65rem;font-size:clamp(.67rem,1vw,.85rem)}
+.terminal span{display:block;color:#9bc6ff;margin-bottom:.4rem}
+.bars{height:115px;width:66%;display:flex;align-items:end;gap:10%}
+.bars i{height:var(--bar);flex:1;background:linear-gradient(#bda2ff,#4a6cbe);border-radius:5px 5px 0 0;transform-origin:bottom}
+.project:hover .bars i{animation:bar .55s both}
+@keyframes bar{from{transform:scaleY(.4)}}
+.drafting svg{width:80%;max-width:270px}
+.drafting{background-color:#15233c;background-image:linear-gradient(#7caaff20 1px,transparent 1px),linear-gradient(90deg,#7caaff20 1px,transparent 1px);background-size:20px 20px;color:#94cbff}
+.tags,.placeholder{font-size:.85rem}
+.text-link{padding:.3rem 0;color:var(--accent);font-weight:700}
+.timeline{display:grid;gap:.65rem;border-left:1px solid var(--accent);padding-left:1rem}
+summary{font-weight:750}
+details p{margin:.7rem 0 0}
+.skill-groups{display:grid;gap:1.1rem}
+.skill-buttons,.profiles{display:flex;flex-wrap:wrap;gap:.55rem}
+.skill-buttons button,.profiles li{background:var(--bg);border:1px solid var(--line);padding:.45rem .8rem;border-radius:20px;list-style:none}
+.skill-buttons button[aria-pressed=true]{background:var(--accent);color:var(--bg)}
+.skill-detail{border-left:2px solid var(--blue);padding-left:1rem}
+.inspiration{padding:clamp(1.5rem,6vw,5rem);border-radius:24px;background:radial-gradient(ellipse at right top,#9365e14a,transparent 65%),var(--surface);border:1px solid var(--line)}
+.roadmap,.profiles{padding:0;margin:0}
+.roadmap{list-style-position:inside}
+.roadmap li::marker{color:var(--accent);font:700 1.4rem ui-monospace,monospace}
+form label{display:grid;margin:.7rem 0 .9rem;gap:.25rem}
+input,textarea{border:1px solid var(--line);background:var(--bg);color:var(--text);width:100%;border-radius:7px;padding:.5rem}
+textarea{resize:vertical}
+.footer{display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap;padding:2rem 0}
+.signature{color:var(--accent);font-weight:700}
+dialog{border:1px solid var(--line);border-radius:16px;background:var(--surface);color:var(--text);width:min(700px,calc(100% - 2rem));padding:0}
+dialog::backdrop{background:#090510d9}
+.detail-inner{position:relative;padding:clamp(1rem,5vw,3rem)}
+.close{float:right}
+#welcome{width:100%;height:100%;max-width:none;max-height:none;inset:0;margin:0;border:0;border-radius:0;background:radial-gradient(ellipse,#342058,#100c19 68%);color:#fff2ff}
+#welcome[open]{display:grid;place-items:center}
+#stars{position:absolute;width:100%;height:100%;inset:0;pointer-events:none}
+.welcome-copy{position:relative;text-align:center;padding:1rem}
+.welcome-copy h2{font-size:clamp(3.3rem,12vw,10rem);margin-bottom:1rem}
+.welcome-copy h2 span{display:block;animation:arrive .9s both}
+.welcome-copy h2 span+span{color:#c29aff;animation-delay:.17s}
+.welcome-copy p{color:#e9d8fc}
+.quiet{display:block;margin:.6rem auto 0;padding:.4rem;text-decoration:underline}
+@keyframes arrive{from{opacity:0;translate:0 26px;filter:blur(8px)}}
+.reveal-ready .reveal:not(.visible){opacity:.15;translate:0 18px}
+.reveal{transition:opacity var(--speed),translate var(--speed)}
+.reveal:focus-within{opacity:1!important;translate:none!important}
+#cursor{display:none}
+@media(pointer:fine){.cursor-on #cursor{display:block;position:fixed;width:18px;height:18px;pointer-events:none;z-index:12;border:1px solid var(--accent);border-radius:50%;translate:-50% -50%;transition:scale .2s;visibility:hidden}.cursor-on #cursor.active{visibility:visible}.cursor-on #cursor.over{scale:1.8}}
+@media(max-width:760px){
+  .hero,.split,.featured{grid-template-columns:1fr}.hero{min-height:0;padding:3.5rem 0 1rem}.hero-art{min-height:270px}.orbit-stage{width:min(62%,260px)}.gallery,.roadmap{grid-template-columns:1fr}.split{gap:0}.controls{gap:.3rem}
+  .js #menu{display:block;margin-left:auto}.js #nav{display:none;position:absolute;top:100%;right:0;left:0;background:var(--surface);padding:1rem;border:1px solid var(--line);border-radius:8px}.js #nav.open{display:flex}
+}
+[data-motion=off]{scroll-behavior:auto}
+[data-motion=off] *,[data-motion=off] *::before,[data-motion=off] *::after{animation:none!important;transition:none!important}
+[data-motion=off] .reveal{opacity:1!important;translate:none!important}
+[data-motion=off] #cursor{display:none}
+@media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1!important;translate:none!important}}
+.orb{width:50%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 28% 23%,#f4dcff,#a16af3 26%,#5530a1 62%,#1a163b 86%);box-shadow:0 0 66px #9854ff90,inset -12px -13px 25px #1b193a;animation:float 5s ease-in-out infinite}
+.orbit{inset:16%;border-radius:50%;border:1px solid #c499ff88;transform:rotateY(65deg) rotateX(30deg)}.o2{transform:rotateY(-57deg) rotateX(30deg)}.o3{inset:-5%;border:1px dashed #8fb5ff8c;transform:rotateX(60deg)}
+.planet{width:10px;aspect-ratio:1;border-radius:50%;background:#eddaff;box-shadow:0 0 15px #be97ff;animation:glimmer 3s alternate infinite}.p1{top:18%;left:18%}.p2{right:9%;top:55%;animation-delay:.7s}.p3{left:32%;bottom:14%;animation-delay:1.4s}.axis{color:var(--blue)}.a1{top:6%;right:12%}.a2{top:36%;left:5%}.a3{bottom:14%;right:25%}.art-note{bottom:0;color:var(--muted);font: .65rem ui-monospace,monospace;letter-spacing:.2em}
+@keyframes glimmer{to{opacity:.35;scale:.6}}
+#project-dialog[open]{animation:arrive .3s both}
+#surprise{color:var(--accent);animation:arrive .4s both}
+.magnetic{translate:var(--mx,0) var(--my,0);transition:translate .18s}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<dialog id="welcome" aria-labelledby="welcome-title">
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="welcome-copy">
+    <p class="eyebrow">FIRST COMMIT · MY FIRST PORTFOLIO</p>
+    <h2 id="welcome-title"><span>Akhila Sri</span><span>Talpareddy</span></h2>
+    <p>Curious Mind. Creative Vision. Endless Possibilities.</p>
+    <button class="primary magnetic" data-enter autofocus>Enter My Universe <span aria-hidden="true">↗</span></button>
+    <button class="quiet" data-enter>Skip introduction</button>
+  </div>
+</dialog>
+<header class="header">
+  <div class="nav-shell">
+    <a class="brand" href="#home"><span class="mark">a<span>.</span></span> Akhila Sri</a>
+    <button id="menu" class="icon" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">☰</button>
+    <nav id="nav" aria-label="Main navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a></nav>
+    <div class="controls"><button class="icon" id="motion" aria-label="Reduce motion" aria-pressed="false" title="Reduce motion">≈</button><button class="icon" id="theme" aria-label="Light theme" aria-pressed="false" title="Switch theme">☼</button></div>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+<main id="main" tabindex="-1">
+<section class="hero shell" id="home" aria-labelledby="home-title">
+  <div class="hero-copy">
+    <p class="eyebrow"><i></i> CSE STUDENT · ADITYA UNIVERSITY</p>
+    <h1 id="home-title"><span>Hello, World!</span><br>I'm <em>Akhila Sri.</em></h1>
+    <p class="identity">Aspiring Software Developer <span>•</span> Creative Thinker <span>•</span> Technology Enthusiast</p>
+    <p class="intro">I’m Akhila Sri Talpareddy, a first-year Computer Science and Engineering student exploring how code, AI, and the web can make everyday life easier.</p>
+    <div class="actions"><a class="primary magnetic" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="secondary" href="#about">Get to know me <span aria-hidden="true">↓</span></a></div>
+  </div>
+  <div class="hero-art" aria-hidden="true"><div class="orbit-stage">
+    <div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
+    <div class="orb"><div></div></div><b class="planet p1"></b><b class="planet p2"></b><b class="planet p3"></b>
+    <span class="axis a1">+</span><span class="axis a2">+</span><span class="axis a3">+</span>
+    <span class="art-note">CURIOSITY IN ORBIT</span>
+  </div></div>
+</section>
+<div class="shell"><figure class="statement reveal"><blockquote>“I am not just learning technology. I am learning how to use it to create something extraordinary.”</blockquote></figure></div>
+<section class="shell section" id="projects" aria-labelledby="projects-title">
+  <div class="section-head reveal"><p class="eyebrow">PROJECTS</p><h2 id="projects-title">Ideas into <em>reality.</em></h2><p>Four ways I’ve put my curiosity into practice.</p></div>
+  <div class="gallery">
+    <article class="project featured reveal">
+      <div class="project-art jobs" aria-hidden="true"><div class="job-window"><div class="window-bar"><i></i><i></i><i></i></div><div class="job-ui"><small>WORLD CAREER CONNECT</small><strong>Find opportunities<br>by skill.</strong><div class="skill-pills"><span>Programming</span><span>Data</span><span>Web</span></div><div class="job-line"></div><div class="job-line short"></div></div></div></div>
+      <div class="project-copy"><p class="eyebrow">FEATURED · WORKSHOP PROTOTYPE</p><h3>World Career Connect</h3><p>A team prototype for a global job portal that brings opportunities from different sources into one place and helps people explore roles by skill and interest.</p><p class="tags">Design Thinking · AI Workshop · Web Prototyping</p><button class="text-link" data-project="world">Explore case study ↗</button></div>
+    </article>
+    <article class="project reveal"><div class="project-art code" aria-hidden="true"><div class="terminal"><span>C / PROBLEM SOLVING</span><code>int expected = 100 * 101 / 2;<br>int missing = expected - sum;<br><em>printf("%d", missing);</em></code></div></div><div class="project-copy"><h3>C Programming Collection</h3><p>Practice with number problems, control flow, arrays, and matrices.</p><p class="tags">C · Algorithms</p><button class="text-link" data-project="coding">Open project ↗</button></div></article>
+    <article class="project reveal"><div class="project-art data" aria-hidden="true"><div class="bars"><i style="--bar:35%"></i><i style="--bar:61%"></i><i style="--bar:46%"></i><i style="--bar:84%"></i><i style="--bar:69%"></i></div></div><div class="project-copy"><h3>Power BI and Power Query</h3><p>Cleaning, appending, and transforming tables for academic assignments.</p><p class="tags">Excel · Power BI · Power Query</p><button class="text-link" data-project="analytics">Open project ↗</button></div></article>
+    <article class="project reveal"><div class="project-art drafting" aria-hidden="true"><svg viewBox="0 0 300 144" fill="none"><path d="M45 111H255M75 124V22M75 111C105 111 102 45 150 45S195 111 225 111M75 111L150 45L225 111M150 45V111" stroke="currentColor"/><circle cx="150" cy="73" r="28" stroke="currentColor" stroke-dasharray="4 4"/><circle cx="150" cy="45" r="4" fill="currentColor"/><circle cx="75" cy="111" r="4" fill="currentColor"/><circle cx="225" cy="111" r="4" fill="currentColor"/></svg></div><div class="project-copy"><h3>Engineering Graphics</h3><p>Technical drawing practice with projections, curves, and constructions.</p><p class="tags">AutoCAD · Engineering Drawing</p><button class="text-link" data-project="graphics">Open project ↗</button></div></article>
+  </div>
+</section>
+<section class="shell section split" id="about"><div class="section-head reveal"><p class="eyebrow">ABOUT ME</p><h2>Beyond <em>the code.</em></h2></div><div class="reveal copy"><p>I’m curious about how websites, applications, and artificial intelligence work. I enjoy exploring a concept and then trying it myself, whether that means solving a C programming problem or sketching a website idea with my team.</p><p>I want to become a skilled software developer and use what I learn to turn everyday problems into meaningful digital projects.</p></div></section>
+<section class="shell section split" id="education"><div class="section-head reveal"><p class="eyebrow">EDUCATION</p><h2>My learning <em>journey.</em></h2></div><div class="timeline">
+  <details class="reveal" open><summary>Aditya University</summary><p>First-year B.Tech student in Computer Science and Engineering.</p></details>
+  <details class="reveal"><summary>What I’m exploring now</summary><p>C, Python, website development, and the foundations of artificial intelligence.</p></details>
+  <details class="reveal"><summary>What I want to build next</summary><p>Interactive web projects and applications that solve real problems.</p></details>
+</div></section>
+<section class="shell section" id="skills">
+  <div class="section-head reveal"><p class="eyebrow">SKILLS</p><h2>My growing <em>tech universe.</em></h2><p>Select a skill to see where it fits in my learning.</p></div>
+  <div class="skill-groups reveal">
+    <div><h3>Practised</h3><div class="skill-buttons" data-group="practised"><button data-skill="c" aria-pressed="true">C Programming</button><button data-skill="excel" aria-pressed="false">Excel</button><button data-skill="bi" aria-pressed="false">Power BI</button><button data-skill="query" aria-pressed="false">Power Query</button><button data-skill="cad" aria-pressed="false">AutoCAD</button><button data-skill="solve" aria-pressed="false">Problem-solving</button></div></div>
+    <div><h3>Exploring</h3><div class="skill-buttons" data-group="exploring"><button data-skill="python" aria-pressed="false">Python</button><button data-skill="ai" aria-pressed="false">Artificial Intelligence</button><button data-skill="web" aria-pressed="false">Web Development</button></div></div>
+    <div id="skill-detail" class="skill-detail" aria-live="polite"><h3>C Programming</h3><p>I’ve practised loops, conditionals, arrays, matrices, and number problems in C.</p></div>
+  </div>
+</section>
+<section class="shell section split" id="journey"><div class="section-head reveal"><p class="eyebrow">EXPERIENCE</p><h2>Learning by <em>doing.</em></h2></div><div class="timeline">
+  <details class="reveal" open><summary>Design Thinking Using AI workshop</summary><p>My team identified a problem in job searching, proposed World Career Connect, and explored how to prototype a website around the idea.</p></details>
+  <details class="reveal"><summary>Programming and data assignments</summary><p>I practised breaking problems into smaller steps in C and preparing tables for analysis in Excel, Power BI, and Power Query.</p></details>
+  <details class="reveal"><summary>Engineering Graphics coursework</summary><p>I used AutoCAD to practise projections, curves, lineweights, and geometric constructions.</p></details>
+</div></section>
+<section class="shell section split" id="achievements"><div class="section-head reveal"><p class="eyebrow">CERTIFICATIONS &amp; ACHIEVEMENTS</p><h2>Learning <em>milestones.</em></h2></div><details class="panel reveal"><summary>Design Thinking Using AI · Workshop participation</summary><p>Worked with my team on the World Career Connect workshop prototype.</p><p class="placeholder">Verified certificate link pending.</p></details></section>
+<section class="shell section" id="inspiration"><div class="inspiration reveal"><p class="eyebrow">INSPIRATION</p><h2>“Every great innovation begins with a <em>simple idea.</em>”</h2><p>I’m inspired by the power of technology to solve real-world problems and make people’s lives easier.</p></div></section>
+<section class="shell section" id="goals"><div class="section-head reveal"><p class="eyebrow">FUTURE GOALS</p><h2>What comes <em>next.</em></h2></div><ol class="roadmap reveal"><li><h3>Grow as a developer</h3><p>Build a stronger foundation in programming and web development.</p></li><li><h3>Explore AI</h3><p>Learn how AI can support useful applications.</p></li><li><h3>Build for real needs</h3><p>Turn creative ideas into applications that make everyday tasks easier.</p></li></ol></section>
+<section class="shell section split" id="contact"><div class="section-head reveal"><p class="eyebrow">CONTACT</p><h2>Let’s <em>connect.</em></h2><p>Verified contact links are pending.</p><ul class="profiles" aria-label="Pending professional links"><li>✉ Email</li><li>⌘ GitHub</li><li>↗ LinkedIn</li><li>◎ Other profiles</li></ul></div>
+<form class="panel reveal" id="contact-form"><h3>Draft a message</h3><p>Copy your draft for later. This form runs in your browser.</p><label>Your name<input name="name" autocomplete="name" required maxlength="120"></label><label>Email<input type="email" name="email" autocomplete="email" required maxlength="254"></label><label>Message<textarea name="message" rows="4" required maxlength="2500"></textarea></label><button class="primary" type="submit">Prepare draft</button><div id="draft-box" hidden><label>Ready to copy<textarea id="draft" readonly rows="5"></textarea></label><button id="copy" class="secondary" type="button">Copy draft</button></div><p id="form-status" role="status"></p></form></section>
+</main>
+<footer class="shell footer"><div><p class="signature">Designed with Curiosity. Built with Creativity.</p><p>Akhila Sri Talpareddy</p></div><nav aria-label="Footer navigation"><a href="#projects">Projects</a><a href="#contact">Contact</a><a href="#home">Back to top ↑</a><button id="secret" class="icon" aria-label="Reveal a developer surprise" aria-pressed="false">{ }</button></nav><output id="surprise" hidden>printf("Hello, World!"); ✦</output></footer>
+<dialog id="project-dialog" aria-labelledby="detail-title"><div class="detail-inner"><button class="icon close" id="close-project" aria-label="Close project details" autofocus>×</button><p class="eyebrow" id="detail-type"></p><h2 id="detail-title"></h2><div id="detail-body"></div></div></dialog>
+<div id="cursor" aria-hidden="true"></div>
+<script>
+'use strict';
+
+const root = document.documentElement;
+const get = id => document.getElementById(id);
+const mediaMotion = matchMedia('(prefers-reduced-motion: reduce)');
+const finePointer = matchMedia('(pointer: fine)');
+const freeMotion = () => root.dataset.motion !== 'off' && !mediaMotion.matches;
+const recall = (key, fallback) => {
+  try { return localStorage.getItem(key) ?? fallback; } catch { return fallback; }
+};
+const remember = (key, value) => {
+  try { localStorage.setItem(key, value); } catch { /* Preferences work for this visit. */ }
+};
+root.classList.add('js', 'cursor-on');
+root.dataset.theme = recall('portfolio-theme', 'dark');
+root.dataset.motion = recall('portfolio-motion', 'on');
+function syncControls() {
+  get('theme').setAttribute('aria-pressed', String(root.dataset.theme === 'light'));
+  get('motion').setAttribute('aria-pressed', String(!freeMotion()));
+}
+syncControls();
+mediaMotion.addEventListener('change', syncControls);
+get('theme').onclick = () => {
+  root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+  remember('portfolio-theme', root.dataset.theme);
+  syncControls();
+};
+get('motion').onclick = () => {
+  root.dataset.motion = root.dataset.motion === 'off' ? 'on' : 'off';
+  remember('portfolio-motion', root.dataset.motion);
+  syncControls();
+};
+
+const welcome = get('welcome');
+if (!location.hash && typeof welcome.showModal === 'function') {
+  welcome.showModal();
+  const canvas = get('stars');
+  const context = canvas.getContext('2d');
+  const stars = Array.from({length: 66}, () => [Math.random(), Math.random(), Math.random()]);
+  function draw(time) {
+    if (!welcome.open || !context) return;
+    if (canvas.width !== canvas.clientWidth) canvas.width = canvas.clientWidth;
+    if (canvas.height !== canvas.clientHeight) canvas.height = canvas.clientHeight;
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    stars.forEach(([x,y,size]) => {
+      const light = freeMotion() ? .45 + .32 * Math.sin(time / 950 + x * 17) : .45;
+      context.fillStyle = 'rgba(203,170,255,' + light + ')';
+      context.beginPath();
+      context.arc(x * canvas.width, y * canvas.height, 0.6 + 1.8 * size, 0, Math.PI * 2);
+      context.fill();
+    });
+    if (freeMotion() && !document.hidden) requestAnimationFrame(draw);
+  }
+  requestAnimationFrame(draw);
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden && welcome.open && freeMotion()) requestAnimationFrame(draw);
+  });
+  welcome.querySelectorAll('[data-enter]').forEach(button => {
+    button.onclick = () => welcome.close();
+  });
+  welcome.addEventListener('close', () => get('main').focus({preventScroll:true}));
+}
+
+const nav = get('nav');
+const menu = get('menu');
+function setMenu(open) {
+  nav.classList.toggle('open', open);
+  menu.setAttribute('aria-expanded', String(open));
+}
+menu.onclick = () => setMenu(!nav.classList.contains('open'));
+nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && nav.classList.contains('open')) {
+    setMenu(false);
+    menu.focus();
+  }
+});
+if ('IntersectionObserver' in window) {
+  root.classList.add('reveal-ready');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    });
+  }, {threshold: .09});
+  document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+}
+function updateProgress() {
+  const distance = root.scrollHeight - innerHeight;
+  root.style.setProperty('--progress', distance > 0 ? scrollY / distance : 0);
+}
+addEventListener('scroll', updateProgress, {passive:true});
+addEventListener('resize', updateProgress);
+updateProgress();
+
+const projectDetails = {
+  world: ['Workshop prototype','World Career Connect',[
+    ['Problem','Job seekers often visit multiple websites to compare opportunities.'],
+    ['Proposed solution','Our team designed a global job portal prototype that brings jobs from different sources together and helps people explore by skill and interest.'],
+    ['What I learned','I gained experience identifying a real-world problem, collaborating with teammates, and turning an idea into a website prototype.']
+  ]],
+  coding: ['Programming practice','C Programming Collection',[
+    ['Exercises','Armstrong and narcissistic numbers, Fibonacci series, missing numbers, and problems involving arrays and matrices.'],
+    ['What I learned','I practised breaking problems down with loops, conditionals, and arithmetic. For a list containing 1 through 100 with one missing number, subtracting the observed sum from 5,050 gives the missing value.']
+  ]],
+  analytics: ['Academic assignments','Power BI and Power Query',[
+    ['What I practised','Data cleaning, appending queries, transforming tables, writing formulas in Excel, and creating visual representations of data.'],
+    ['What I learned','Preparing a consistent table makes its contents easier to compare and visualize.']
+  ]],
+  graphics: ['Coursework','Engineering Graphics',[
+    ['What I practised','Projections, curves, lineweights, and geometric constructions in AutoCAD.'],
+    ['What I learned','Construction lines and lineweights help distinguish reference geometry from the final drawing.']
+  ]]
+};
+const projectDialog = get('project-dialog');
+document.querySelectorAll('[data-project]').forEach(button => {
+  button.onclick = () => {
+    const [type, title, sections] = projectDetails[button.dataset.project];
+    get('detail-type').textContent = type;
+    get('detail-title').textContent = title;
+    get('detail-body').replaceChildren(...sections.flatMap(([label, value]) => {
+      const heading = document.createElement('h3');
+      const paragraph = document.createElement('p');
+      heading.textContent = label;
+      paragraph.textContent = value;
+      return [heading, paragraph];
+    }));
+    projectDialog.showModal();
+  };
+});
+get('close-project').onclick = () => projectDialog.close();
+projectDialog.addEventListener('click', event => {
+  if (event.target === projectDialog) projectDialog.close();
+});
+
+const skills = {
+  c:'I’ve practised loops, conditionals, arrays, matrices, and number problems in C.',
+  excel:'I used spreadsheet formulas and explored ways to visualize data.',
+  bi:'I explored table transformations and visual representations in academic assignments.',
+  query:'I practised cleaning data, transforming tables, and appending queries.',
+  cad:'I practised projections, curves, lineweights, and geometric constructions.',
+  solve:'I break problems into smaller steps and work through examples.',
+  python:'I’m exploring Python as part of my programming learning.',
+  ai:'I’m learning about AI and how it can support creative problem-solving.',
+  web:'I’m exploring web development and have worked on a team website prototype.'
+};
+const skillButtons = document.querySelectorAll('[data-skill]');
+skillButtons.forEach(button => {
+  button.onclick = () => {
+    skillButtons.forEach(skill => skill.setAttribute('aria-pressed', String(skill === button)));
+    get('skill-detail').querySelector('h3').textContent = button.textContent;
+    get('skill-detail').querySelector('p').textContent = skills[button.dataset.skill];
+  };
+});
+get('contact-form').onsubmit = event => {
+  event.preventDefault();
+  const values = new FormData(event.currentTarget);
+  get('draft').value = 'From: ' + values.get('name') + ' <' + values.get('email') + '>\n\n' + values.get('message');
+  get('draft-box').hidden = false;
+  get('form-status').textContent = 'Draft prepared.';
+};
+get('copy').onclick = async () => {
+  try {
+    await navigator.clipboard.writeText(get('draft').value);
+    get('form-status').textContent = 'Draft copied.';
+  } catch {
+    get('draft').select();
+    get('form-status').textContent = 'Draft selected. Use your device’s Copy command.';
+  }
+};
+get('secret').onclick = () => {
+  get('surprise').hidden = !get('surprise').hidden;
+  get('secret').setAttribute('aria-pressed', String(!get('surprise').hidden));
+};
+
+document.addEventListener('pointermove', event => {
+  if (!finePointer.matches || !freeMotion()) return;
+  const cursor = get('cursor');
+  cursor.style.left = event.clientX + 'px';
+  cursor.style.top = event.clientY + 'px';
+  cursor.classList.add('active');
+  cursor.classList.toggle('over', Boolean(event.target.closest('button,a,summary')));
+});
+document.documentElement.addEventListener('pointerleave', () => get('cursor').classList.remove('active'));
+document.querySelectorAll('.project,.hero-art,.magnetic').forEach(element => {
+  element.addEventListener('pointermove', event => {
+    if (!finePointer.matches || !freeMotion()) return;
+    const rect = element.getBoundingClientRect();
+    const dx = (event.clientX - rect.left) / rect.width - .5;
+    const dy = (event.clientY - rect.top) / rect.height - .5;
+    const target = element.querySelector('.orbit-stage') ?? element;
+    target.style.setProperty('--rx', -dy * 13 + 'deg');
+    target.style.setProperty('--ry', dx * 13 + 'deg');
+    target.style.setProperty('--mx', dx * 7 + 'px');
+    target.style.setProperty('--my', dy * 7 + 'px');
+  });
+  element.addEventListener('pointerleave', () => {
+    const target = element.querySelector('.orbit-stage') ?? element;
+    ['--rx','--ry','--mx','--my'].forEach(key => target.style.removeProperty(key));
+  });
+});
+
+</script>
+</body>
+</html>
